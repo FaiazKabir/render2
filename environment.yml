@@ -12,3 +12,13 @@ dependencies:
   - pip:
     - python-rapidjson==1.10
     - voila
+
+services:
+  - type: web
+    name: canada-dash-app
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:server
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.6

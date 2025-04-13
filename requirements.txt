@@ -1,21 +1,7 @@
-# Core application dependencies
 dash==2.11.1
 plotly==5.18.0
-pandas==2.1.4
-
-# Geo-spatial stack (compatible versions)
 geopandas==0.14.1
-fiona==1.9.6
+pandas==2.1.4
+gunicorn==21.2.0  # MUST be included
 shapely==2.0.2
 pyproj==3.6.1
-rtree==1.1.0
-
-# Supporting libraries
-numpy==1.26.3
-gdal==3.7.2
-click==8.1.7
-Flask==2.3.2
-Jinja2==3.1.2
-
-# For GeoJSON handling
-python-rapidjson==1.10
